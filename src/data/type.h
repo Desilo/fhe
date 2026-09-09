@@ -1,0 +1,26 @@
+#include <cstdint>
+
+#pragma once
+
+namespace desilo::fhe {
+
+enum class DataType : uint8_t {
+  NONE = 0,
+  SECRET_KEY = 1,
+  PUBLIC_KEY = 2,
+  KEY_SWITCHING_KEY = 5,
+  RELINEARIZATION_KEY = 6,
+  CONJUGATION_KEY = 7,
+  FIXED_ROTATION_KEY = 8,
+  ROTATION_KEY = 9,
+  SMALL_BOOTSTRAP_KEY = 10,
+  BOOTSTRAP_KEY = 11,
+  UNIT_PLAINTEXT = 12,
+  UNIT_CIPHERTEXT = 13,
+  PLAINTEXT = 15,
+  CIPHERTEXT = 16,
+  KEY_SWITCHER = 18,
+  UNIT_DECOMPOSED_CIPHERTEXT = 19,
+};
+
+}

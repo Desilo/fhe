@@ -1,0 +1,22 @@
+*.pyc
+*.so
+*.swo
+*.swp
+*.log
+
+build/
+coverage/
+debug_build/
+dist/
+poetry.lock
+
+*.egg-info/
+
+*.pkl
+
+.cache
+.vscode
+
+# 내부용 docker / CI (로컬 전용, 공개 저장소에 미포함)
+docker/
+.dockerignore
